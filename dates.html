@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SHOWS DAY AND TIME</title>
+</head>
+<body>
+    <script>
+        var d=new Date();
+        // document.write(d.getDate()+"-" +d.getMonth() +"-"+d.getUTCFullYear());
+       var arr={
+            1:"MONDAY",
+            2:"TUESDAY",
+            3:"WEDNESDAY",
+            4:"THURSDAY",
+            5:"FRIDAY",
+            6:"SATURDAY",
+            7:"SUNDAY"
+        }
+
+        document.write("TODAY : " + arr[d.getDay()]);
+        document.write("   TIME IS :"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds());
+    </script>
+    
+</body>
+</html>

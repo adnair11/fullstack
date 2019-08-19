@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MERGE TWO ARRAYS AND REMOVE THE DUPLICATES</title>
+</head>
+<body>
+    <!-- <input id="a" type="text " placeholder="STRING1">
+    <input id="b" type="text " placeholder="STRING2">
+    
+    <button onclick="run()">SUBMIT</button> -->
+    <script>
+        a=["10","20","30","40","50"];
+        b=["20","40","60"];
+       c=a.concat(b);
+       var d=[];
+       flag=false;
+    
+       console.log(c)
+       for(i=0;i<c.length;i++)
+       {
+           count=0;
+           for(j=0;j<c.length;j++)
+           {
+               if(c[i]==c[j])
+                {
+                   count++; 
+                }
+           }
+           if(count==1)
+             d.push(c[i]);
+             
+       }
+       console.log(d);
+
+        
+    </script>
+    
+</body>
+</html>

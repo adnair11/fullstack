@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HIGHLIGHTING BOLD TAGS</title>
+</head>
+<body>
+    <para>
+        This <strong>a</strong>  sample text . <strong>IT</strong> WILL <strong> the bold words</strong> on a button click;
+    </para>
+    <button onclick="run()">HIGHLIGHT</button>
+
+    <script>
+        function run()
+        {
+            getbold=document.getElementsByTagName('strong')
+            for(i=0;i<getbold.length;i++)
+            {
+                console.log(getbold);
+                getbold[i].style.backgroundColor="orange";
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

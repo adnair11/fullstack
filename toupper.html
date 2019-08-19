@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CONVERT TO UPPERCASE</title>
+</head>
+<body>
+    <input id="txt" type="text">
+    <button onclick="run()">CLICK HERE</button>
+    <script>
+         function run()
+         {
+        var a=document.getElementById("txt").value;
+        var x=a.split("");
+   
+        x[0]=x[0].toUpperCase();
+        console.log(x[0]);
+        for(j=0;j<x.length;j++)
+        {
+            if(x[j]==" ")
+            {
+              x[j+1]=x[j+1].toUpperCase();
+            }
+        }
+  
+        document.write(x.join(""));
+         }
+    </script>
+</body>
+</html>

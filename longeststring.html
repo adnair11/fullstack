@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LENGTH of words</title>
+</head>
+<body>
+        <input id="txt" type="text">
+        <button onclick="run()">CLICK HERE</button>
+        <script>
+             function run()
+             {
+                 var a=document.getElementById("txt").value;
+                 var x=[];
+                 x=a.split(" ");
+                 console.log(x);
+                 var count=x[0].length;
+                 for(i=0;i<x.length;i++)
+                 {
+                     console.log("HEllo");
+                     if(x[i].length>=count)
+                     {
+                         console.log("xxx");
+                     count=x[i].length;
+                     document.write(x[i] + "=" +count + " letters long   ");
+                     }
+                 }
+                 
+
+                 
+                 
+          
+             }
+        </script>
+    
+</body>
+</html>

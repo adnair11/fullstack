@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alphabetical ordering of any string</title>
+</head>
+<body>
+    <input id="t" type="text">
+    <button onclick="run()">SUBMIT</button>
+    <script>
+        function run()
+        {
+       var x=document.getElementById("t").value;
+       var a=[];
+        var i=0;
+        for(i=0;i<x.length;i++)
+        {
+            a[i]=x[i];
+            console.log(a[i]);
+        }
+
+        a.sort();
+        alert(a);
+        }
+
+
+    </script>
+
+</body>
+</html>
